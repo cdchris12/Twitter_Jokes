@@ -49,6 +49,6 @@ def main():
     joke = getJoke(_search)
 # End def
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     main()
 # End def
