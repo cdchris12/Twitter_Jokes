@@ -2,6 +2,7 @@
 import json
 import os
 import sys
+import math
 
 # Try loading the config file and die if not found
 try:
@@ -35,18 +36,20 @@ def search(api):
 # End def
 
 def getJoke(_search):
+    rand = math.random(0,14)
     for i, tweet in enumerate(_search):
-        print i
+        if rand == i:
+            return tweet.text
         #print(tweet.id, tweet.text)
     # End for
-
-    return 0
 # End def
 
 def main():
     api = setup(config)
     _search = search(api)
     joke = getJoke(_search)
+
+    print joke
 # End def
 
 if __name__ == "__main__":
