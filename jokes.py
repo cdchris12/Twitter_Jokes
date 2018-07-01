@@ -36,7 +36,7 @@ def search(api):
 # End def
 
 def getJoke(_search):
-    rand = math.random(0,14)
+    rand = math.random.randrange(0,14)
     for i, tweet in enumerate(_search):
         if rand == i:
             return tweet.text
