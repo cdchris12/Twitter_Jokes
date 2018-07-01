@@ -20,10 +20,10 @@ import twitter
 
 def setup(config):
     api = twitter.Api(
-        consumer_key=config.c_key,
-        consumer_secret=config.c_secret,
-        access_token_key=config.t_key,
-        access_token_secret=config.t_secret
+        consumer_key=config["c_key"],
+        consumer_secret=config["c_secret"],
+        access_token_key=config["t_key"],
+        access_token_secret=config["t_secret"]
     )
 
     return api
