@@ -44,7 +44,7 @@ def getJoke(_search):
 # End def
 
 def main():
-    api = setup()
+    api = setup(config)
     _search = search(api)
     joke = getJoke(_search)
 # End def
