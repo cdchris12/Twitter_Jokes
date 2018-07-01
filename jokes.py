@@ -7,7 +7,7 @@ import sys
 try:
     os.stat("config.json")
 except Exception:
-    print ("Config file missing!!!", flush=True)
+    print ("Config file missing!!!")
     sys.exit(1)
 else:
     with open('config.json', 'r') as infile:
